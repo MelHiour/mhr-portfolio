@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Producer & Artist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>MHR</h1>
+        </header>
+
+        <section class="music-player">
+            <h2>Listen</h2>
+            <div class="player-card">
+                <p id="track-title">Select a track...</p>
+                <audio id="main-player" controls>
+                    <source src="" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                
+<ul class="playlist">
+    <li onclick="playTrack('Project 24', 'https://pub-b6e4d5efaab24b03833388ee8b545d47.r2.dev/Project%2024.wav')">Project 24</li>
+    <li onclick="playTrack('Project 23', 'https://pub-b6e4d5efaab24b03833388ee8b545d47.r2.dev/Project%2023.wav')">Project 23</li>
+    <li onclick="playTrack('Project 21', 'https://pub-b6e4d5efaab24b03833388ee8b545d47.r2.dev/Project%2021.wav')">Project 21</li>
+    <li onclick="playTrack('Project 20', 'https://pub-b6e4d5efaab24b03833388ee8b545d47.r2.dev/Project%2020.wav')">Project 20</li>
+    <li onclick="playTrack('Project 19', 'https://pub-b6e4d5efaab24b03833388ee8b545d47.r2.dev/Project%2019.wav')">Project 19</li>
+    <li onclick="playTrack('Project 18', 'https://pub-b6e4d5efaab24b03833388ee8b545d47.r2.dev/Project%2018.wav')">Project 18</li>
+    <li onclick="playTrack('Project 17', 'https://pub-b6e4d5efaab24b03833388ee8b545d47.r2.dev/Project%2017.wav')">Project 17</li>
+    <li onclick="playTrack('Project 16', 'https://pub-b6e4d5efaab24b03833388ee8b545d47.r2.dev/Project%2016.wav')">Project 16</li>
+    <li onclick="playTrack('Project 15', 'https://pub-b6e4d5efaab24b03833388ee8b545d47.r2.dev/Project%2015.wav')">Project 15</li>
+    <li onclick="playTrack('Project 14', 'https://pub-b6e4d5efaab24b03833388ee8b545d47.r2.dev/Project%2014.wav')">Project 14</li>
+    <li onclick="playTrack('Project 13', 'https://pub-b6e4d5efaab24b03833388ee8b545d47.r2.dev/Project%2013.wav')">Project 13</li>
+    <li onclick="playTrack('Project 12', 'https://pub-b6e4d5efaab24b03833388ee8b545d47.r2.dev/Project%2012.wav')">Project 12</li>
+    <li onclick="playTrack('Project 11', 'https://pub-b6e4d5efaab24b03833388ee8b545d47.r2.dev/Project%2011.wav')">Project 11</li>
+    <li onclick="playTrack('Project 10', 'https://pub-b6e4d5efaab24b03833388ee8b545d47.r2.dev/Project%2010.wav')">Project 10</li>
+    <li onclick="playTrack('Project 9', 'https://pub-b6e4d5efaab24b03833388ee8b545d47.r2.dev/Project%209.wav')">Project 9</li>
+    <li onclick="playTrack('Project 8', 'https://pub-b6e4d5efaab24b03833388ee8b545d47.r2.dev/Project%208.wav')">Project 8</li>
+    <li onclick="playTrack('Project 7', 'https://pub-b6e4d5efaab24b03833388ee8b545d47.r2.dev/Project%207.wav')">Project 7</li>
+    <li onclick="playTrack('Project 6', 'https://pub-b6e4d5efaab24b03833388ee8b545d47.r2.dev/Project%206.wav')">Project 6</li>
+    <li onclick="playTrack('Project 5', 'https://pub-b6e4d5efaab24b03833388ee8b545d47.r2.dev/Project%205.wav')">Project 5</li>
+    <li onclick="playTrack('Project 4', 'https://pub-b6e4d5efaab24b03833388ee8b545d47.r2.dev/Project%204.wav')">Project 4</li>
+    <li onclick="playTrack('Project 3', 'https://pub-b6e4d5efaab24b03833388ee8b545d47.r2.dev/Project%203.wav')">Project 3</li>
+    <li onclick="playTrack('Project 2', 'https://pub-b6e4d5efaab24b03833388ee8b545d47.r2.dev/Project%202.wav')">Project 2</li>
+    <li onclick="playTrack('Project 1', 'https://pub-b6e4d5efaab24b03833388ee8b545d47.r2.dev/Project%201.wav')">Project 1</li>
+</ul>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2026 MHR | <a href="mailto:melhiour@gmail.com">Contact</a></p>
+        </footer>
+    </div>
+
+    <script>
+        function playTrack(title, url) {
+            const player = document.getElementById('main-player');
+            const titleDisplay = document.getElementById('track-title');
+            titleDisplay.innerText = "Playing: " + title;
+            player.src = url;
+            player.play();
+        }
+    </script>
+</body>
+</html>

@@ -40,4 +40,15 @@ audio { width: 100%; margin: 15px 0; }
     transition: 0.2s;
 }
 
-.playlist li:hover { background: #333; color: var(--accent-color); }
+.playlist li:hover { 
+    background: #333; 
+    color: var(--accent-color); 
+}
+
+/* NEW: Style for the track that is currently playing */
+.playlist li.active {
+    background: #2a2a2a;
+    color: var(--accent-color);
+    border-left: 4px solid var(--accent-color);
+    padding-left: 6px; /* Adjust for border */
+}
